@@ -16,13 +16,46 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-main-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
 }
 
+button {
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .current-link {
     color: var(--logo-main-color);
 }
@@ -41,6 +74,23 @@ a {
 
 /* --------------HEADER ----------------*/
 
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.header__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.header__contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    
+}
 .logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -50,6 +100,7 @@ a {
 }
 .header__logo {
     color: var(--logo-main-color);
+    margin-right: 93px;
 }
 
 .header__logo span {
@@ -61,6 +112,8 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header__menu-link:hover, .header__menu-link:focus {
@@ -68,6 +121,8 @@ a {
 }
 
 .header__contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -81,20 +136,29 @@ a {
 /*----------------------HERO-----------------------------*/
 
 .hero {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: var(--bcg-footer-hero-color);
 }
 
 .hero__title {
+    width: 696px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-hover-color);
 }
 
 .hero__button {
+    padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -102,6 +166,18 @@ a {
     letter-spacing: 0.06em;
     color: var(--text-hover-color);
     background-color: var(--logo-main-color);
+}
+
+/*----------------------------ADVANTAGES---------------------------------*/
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantages__title-hidden {
@@ -118,6 +194,7 @@ a {
 }
 
 .advantages__title {
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -131,16 +208,44 @@ a {
     color: var(--text-second-color)
 }
 
-/*----------------------------DESIGN--------------------*/
+/*------------------------------- DESIGN  ------------------------*/
 
+.design {
+    padding-top: 0;
+}
 
+.design__title {
+    margin-bottom: 50px;
+}
 
-/*----------------------------TEAM--------------------*/
+.design__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/*------------------------------------- TEAM --------------------------*/
 .team {
     background-color: var(--bcg-team-color);
 }
 
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__title-main {
+    margin-bottom: 50px;
+}
+
+.team__description {
+    padding: 30px 70px;
+    border: 1px solid var(--bcg-team-color);
+}
+
 .team__title {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
